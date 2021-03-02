@@ -32,5 +32,19 @@ module.exports = {
     port: 3003,
   },
   plugins: [
+    new ModuleFederationPlugin({
+      name: 'components',
+      library: { type: 'var', name: 'components' },
+      filename: 'remoteEntry.js',
+      exposes: {
+        './Header': './src/Header',
+        './Footer': './src/Footer'
+      },
+      // remotes: {
+      //   'landing_page': 'landing_page',
+      //   'main_page': 'main_page',
+      // },
+      shared: ['react', 'react-dom'],
+    }),
   ],
 };

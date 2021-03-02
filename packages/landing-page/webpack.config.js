@@ -37,11 +37,8 @@ module.exports = {
       name: 'landing_page',
       library: { type: 'var', name: 'landing_page' },
       filename: 'remoteEntry.js',
-      exposes: {
-        './Header': './src/Header',
-      },
       remotes: {
-        'main_page': 'main_page',
+        'components': 'components',
       },
       shared: ['react', 'react-dom'],
     }),
