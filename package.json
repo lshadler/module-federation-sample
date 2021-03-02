@@ -3,7 +3,12 @@
   "version": "1.0.0",
   "description": "Example Module Federation Demo",
   "main": "index.js",
+  "workspaces": [
+    "packages/*"
+  ],
   "scripts": {
+    "start": "pnpm recursive run start",
+    "build": "pnpm recursive run build",
     "dev": "pnpm recursive run dev"
   },
   "repository": {

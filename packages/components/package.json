@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "start": "serve dist -p 3003",
+    "start": "webpack serve --mode production",
     "build": "webpack --mode production",
-    "dev": "concurrently \"webpack --watch\" \"serve dist -p 3003\""
+    "dev": "webpack serve"
   },
   "dependencies": {
     "react": "^16.13.1",
@@ -16,8 +16,10 @@
     "@babel/preset-react": "^7.8.3",
     "babel-loader": "^8.0.6",
     "concurrently": "^5.1.0",
+    "html-webpack-plugin": "5.2.0",
     "serve": "^11.3.0",
-    "webpack": "git://github.com/webpack/webpack.git#dev-1",
-    "webpack-cli": "^3.3.11"
+    "webpack": "5.24.2",
+    "webpack-cli": "4.5.0",
+    "webpack-dev-server": "^3.11.2"
   }
 }
