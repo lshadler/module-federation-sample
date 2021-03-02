@@ -9,6 +9,9 @@ module.exports = {
   optimization: {
     minimize: mode === 'production',
   },
+  output: {
+    publicPath: 'http://localhost:3003/'
+  },
   resolve: {
     extensions: ['.jsx', '.js', '.json', '.tsx', '.ts'],
   },
@@ -23,7 +26,11 @@ module.exports = {
       },
     ],
   },
-
+  devServer: {
+    contentBase: `${__dirname}/dist`,
+    compress: true,
+    port: 3003,
+  },
   plugins: [
   ],
 };

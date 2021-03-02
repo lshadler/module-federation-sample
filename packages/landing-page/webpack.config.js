@@ -7,6 +7,9 @@ module.exports = {
   mode,
   entry: './src/index',
   devtool: 'source-map',
+  output: {
+    publicPath: 'http://localhost:3002/',
+  },
   optimization: {
     minimize: mode === 'production',
   },
@@ -24,8 +27,24 @@ module.exports = {
       },
     ],
   },
-
+  devServer: {
+    contentBase: `${__dirname}/dist`,
+    compress: true,
+    port: 3002,
+  },
   plugins: [
+    new ModuleFederationPlugin({
+      name: 'landing_page',
+      library: { type: 'var', name: 'landing_page' },
+      filename: 'remoteEntry.js',
+      exposes: {
+        './Header': './src/Header',
+      },
+      remotes: {
+        'main_page': 'main_page',
+      },
+      shared: ['react', 'react-dom'],
+    }),
     new HtmlWebpackPlugin({
       template: './public/index.html',
     }),

@@ -1,8 +1,6 @@
 import React from 'react';
-
-export function Header() {
-    return <h1>My Cool Site</h1>;
-}
+import Header from './Header'
+import Footer from 'main_page/Footer';
 
 export default function LandingPage() {
   return (
@@ -10,6 +8,7 @@ export default function LandingPage() {
         <Header />
         <h1>Hello from Landing Page!</h1>
         <a href="http://localhost:3001">Go to main page</a>
+        <Footer />
       </>
   );
 }

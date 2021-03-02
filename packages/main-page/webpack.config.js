@@ -10,6 +10,9 @@ module.exports = {
   optimization: {
     minimize: mode === 'production',
   },
+  output: {
+    publicPath: 'http://localhost:3001/',
+  },
   resolve: {
     extensions: ['.jsx', '.js', '.json'],
   },
@@ -24,8 +27,24 @@ module.exports = {
       },
     ],
   },
-
+  devServer: {
+    contentBase: `${__dirname}/dist`,
+    compress: true,
+    port: 3001,
+  },
   plugins: [
+    new ModuleFederationPlugin({
+      name: 'main_page',
+      library: { type: 'var', name: 'main_page' },
+      filename: 'remoteEntry.js',
+      exposes: {
+        './Footer': './src/Footer',
+      },
+      remotes: {
+        'landing_page': 'landing_page',
+      },
+      shared: ['react', 'react-dom'],
+    }),
     new HtmlWebpackPlugin({
       template: './public/index.html',
     }),
