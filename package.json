@@ -1,0 +1,19 @@
+{
+  "name": "module-federation-sample",
+  "version": "1.0.0",
+  "description": "Example Module Federation Demo",
+  "main": "index.js",
+  "scripts": {
+    "dev": "pnpm recursive run dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lshadler/module-federation-sample.git"
+  },
+  "author": "lshadler",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lshadler/module-federation-sample/issues"
+  },
+  "homepage": "https://github.com/lshadler/module-federation-sample#readme"
+}
