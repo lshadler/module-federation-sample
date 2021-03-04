@@ -1,7 +1,7 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ModuleFederationPlugin = require('webpack/lib/container/ModuleFederationPlugin');
 
-const mode = process.env.NODE_ENV || 'production';
+const mode = process.env.NODE_ENV || 'development';
 
 module.exports = {
   mode,
@@ -40,7 +40,14 @@ module.exports = {
       remotes: {
         'components': 'components',
       },
-      shared: ['react', 'react-dom'],
+      shared: { 
+        react: { 
+          singleton: true 
+        }, 
+        "react-dom": { 
+          singleton: true 
+        } 
+      },
     }),
     new HtmlWebpackPlugin({
       template: './public/index.html',

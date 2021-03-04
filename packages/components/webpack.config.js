@@ -1,6 +1,6 @@
 const ModuleFederationPlugin = require('webpack/lib/container/ModuleFederationPlugin');
 
-const mode = process.env.NODE_ENV || 'production';
+const mode = process.env.NODE_ENV || 'development';
 
 module.exports = {
   mode,
@@ -40,11 +40,14 @@ module.exports = {
         './Header': './src/Header',
         './Footer': './src/Footer'
       },
-      // remotes: {
-      //   'landing_page': 'landing_page',
-      //   'main_page': 'main_page',
-      // },
-      shared: ['react', 'react-dom'],
+      shared: [{ 
+        react: { 
+          singleton: true 
+        }, 
+        "react-dom": { 
+          singleton: true 
+        } 
+      }],
     }),
   ],
 };

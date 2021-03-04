@@ -1,7 +1,7 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ModuleFederationPlugin = require('webpack/lib/container/ModuleFederationPlugin');
 
-const mode = process.env.NODE_ENV || 'production';
+const mode = process.env.NODE_ENV || 'development';
 
 module.exports = {
   mode,
@@ -37,10 +37,15 @@ module.exports = {
       name: 'main_page',
       library: { type: 'var', name: 'main_page' },
       filename: 'remoteEntry.js',
-      remotes: {
-        'components': 'components',
+      remotes: {},
+      shared: { 
+        react: { 
+          singleton: true 
+        }, 
+        "react-dom": { 
+          singleton: true 
+        } 
       },
-      shared: ['react', 'react-dom'],
     }),
     new HtmlWebpackPlugin({
       template: './public/index.html',

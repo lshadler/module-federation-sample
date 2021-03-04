@@ -1,6 +1,6 @@
 dependencies:
-  react: registry.npmjs.org/react/16.14.0
-  react-dom: registry.npmjs.org/react-dom/16.14.0_react@16.14.0
+  react: registry.npmjs.org/react/17.0.1
+  react-dom: registry.npmjs.org/react-dom/17.0.1_react@17.0.1
 devDependencies:
   '@babel/core': registry.npmjs.org/@babel/core/7.13.8
   '@babel/preset-react': registry.npmjs.org/@babel/preset-react/7.12.13_@babel+core@7.13.8
@@ -4559,18 +4559,6 @@ packages:
       registry: 'https://registry.yarnpkg.com/'
       tarball: 'https://registry.npmjs.org/process-nextick-args/-/process-nextick-args-2.0.1.tgz'
     version: 2.0.1
-  registry.npmjs.org/prop-types/15.7.2:
-    dependencies:
-      loose-envify: registry.npmjs.org/loose-envify/1.4.0
-      object-assign: registry.npmjs.org/object-assign/4.1.1
-      react-is: registry.npmjs.org/react-is/16.13.1
-    dev: false
-    name: prop-types
-    resolution:
-      integrity: sha512-8QQikdH7//R2vurIJSutZ1smHYTcLpRWEOlHnzcWHmBYrOGUysKwSsrC89BCiFj3CbrfJ/nXFdJepOVrY1GCHQ==
-      registry: 'https://registry.yarnpkg.com/'
-      tarball: 'https://registry.npmjs.org/prop-types/-/prop-types-15.7.2.tgz'
-    version: 15.7.2
   registry.npmjs.org/proxy-addr/2.0.6:
     dependencies:
       forwarded: registry.npmjs.org/forwarded/0.1.2
@@ -4724,45 +4712,35 @@ packages:
       registry: 'https://registry.yarnpkg.com/'
       tarball: 'https://registry.npmjs.org/rc/-/rc-1.2.8.tgz'
     version: 1.2.8
-  registry.npmjs.org/react-dom/16.14.0_react@16.14.0:
+  registry.npmjs.org/react-dom/17.0.1_react@17.0.1:
     dependencies:
       loose-envify: registry.npmjs.org/loose-envify/1.4.0
       object-assign: registry.npmjs.org/object-assign/4.1.1
-      prop-types: registry.npmjs.org/prop-types/15.7.2
-      react: registry.npmjs.org/react/16.14.0
-      scheduler: registry.npmjs.org/scheduler/0.19.1
+      react: registry.npmjs.org/react/17.0.1
+      scheduler: registry.npmjs.org/scheduler/0.20.1
     dev: false
-    id: registry.npmjs.org/react-dom/16.14.0
+    id: registry.npmjs.org/react-dom/17.0.1
     name: react-dom
     peerDependencies:
-      react: ^16.14.0
+      react: 17.0.1
     resolution:
-      integrity: sha512-1gCeQXDLoIqMgqD3IO2Ah9bnf0w9kzhwN5q4FGnHZ67hBm9yePzB5JJAIQCc8x3pFnNlwFq4RidZggNAAkzWWw==
+      integrity: sha512-6eV150oJZ9U2t9svnsspTMrWNyHc6chX0KzDeAOXftRa8bNeOKTTfCJ7KorIwenkHd2xqVTBTCZd79yk/lx/Ug==
       registry: 'https://registry.yarnpkg.com/'
-      tarball: 'https://registry.npmjs.org/react-dom/-/react-dom-16.14.0.tgz'
-    version: 16.14.0
-  registry.npmjs.org/react-is/16.13.1:
-    dev: false
-    name: react-is
-    resolution:
-      integrity: sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==
-      registry: 'https://registry.yarnpkg.com/'
-      tarball: 'https://registry.npmjs.org/react-is/-/react-is-16.13.1.tgz'
-    version: 16.13.1
-  registry.npmjs.org/react/16.14.0:
+      tarball: 'https://registry.npmjs.org/react-dom/-/react-dom-17.0.1.tgz'
+    version: 17.0.1
+  registry.npmjs.org/react/17.0.1:
     dependencies:
       loose-envify: registry.npmjs.org/loose-envify/1.4.0
       object-assign: registry.npmjs.org/object-assign/4.1.1
-      prop-types: registry.npmjs.org/prop-types/15.7.2
     dev: false
     engines:
       node: '>=0.10.0'
     name: react
     resolution:
-      integrity: sha512-0X2CImDkJGApiAlcf0ODKIneSwBPhqJawOa5wCtKbu7ZECrmS26NvtSILynQ66cgkT/RJ4LidJOc3bUESwmU8g==
+      integrity: sha512-lG9c9UuMHdcAexXtigOZLX8exLWkW0Ku29qPRU8uhF2R9BN96dLCt0psvzPLlHc5OWkgymP3qwTRgbnw5BKx3w==
       registry: 'https://registry.yarnpkg.com/'
-      tarball: 'https://registry.npmjs.org/react/-/react-16.14.0.tgz'
-    version: 16.14.0
+      tarball: 'https://registry.npmjs.org/react/-/react-17.0.1.tgz'
+    version: 17.0.1
   registry.npmjs.org/read-pkg/4.0.1:
     dependencies:
       normalize-package-data: registry.npmjs.org/normalize-package-data/2.5.0
@@ -5077,17 +5055,17 @@ packages:
       registry: 'https://registry.yarnpkg.com/'
       tarball: 'https://registry.npmjs.org/safer-buffer/-/safer-buffer-2.1.2.tgz'
     version: 2.1.2
-  registry.npmjs.org/scheduler/0.19.1:
+  registry.npmjs.org/scheduler/0.20.1:
     dependencies:
       loose-envify: registry.npmjs.org/loose-envify/1.4.0
       object-assign: registry.npmjs.org/object-assign/4.1.1
     dev: false
     name: scheduler
     resolution:
-      integrity: sha512-n/zwRWRYSUj0/3g/otKDRPMh6qv2SYMWNq85IEa8iZyAv8od9zDYpGSnpBEjNgcMNq6Scbu5KfIPxNF72R/2EA==
+      integrity: sha512-LKTe+2xNJBNxu/QhHvDR14wUXHRQbVY5ZOYpOGWRzhydZUqrLb2JBvLPY7cAqFmqrWuDED0Mjk7013SZiOz6Bw==
       registry: 'https://registry.yarnpkg.com/'
-      tarball: 'https://registry.npmjs.org/scheduler/-/scheduler-0.19.1.tgz'
-    version: 0.19.1
+      tarball: 'https://registry.npmjs.org/scheduler/-/scheduler-0.20.1.tgz'
+    version: 0.20.1
   registry.npmjs.org/schema-utils/1.0.0:
     dependencies:
       ajv: registry.npmjs.org/ajv/6.12.6
@@ -6498,8 +6476,8 @@ specifiers:
   '@babel/preset-react': ^7.8.3
   babel-loader: ^8.0.6
   concurrently: ^5.1.0
-  react: ^16.13.1
-  react-dom: ^16.13.1
+  react: ^17.0.1
+  react-dom: ^17.0.1
   serve: ^11.3.0
   webpack: 5.24.2
   webpack-cli: 4.5.0
